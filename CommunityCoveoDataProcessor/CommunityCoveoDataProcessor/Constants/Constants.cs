@@ -9,11 +9,16 @@ namespace CommunityCoveoDataProcessor.Constants
     public static class Constants
     {
         //Telligent
-        public const string baseApi = "https://tessituracommunity9.hq.bluetubeinc.com/api.ashx/v2/";
-        public const string authToken = "fbfb0af1cc4a4d6aa6ba185130bd40f8a2bcbfc1cb7b4cdd9660128da85d95de";
+        public const string baseApi = "http://community.tessituranetwork.com/api.ashx/v2/";
+        public const string authToken = "a25ldDQ1ZzM4dWhqbjp0b2RkbGFudHJ5MzgzNA==";
         public const string adminName = "toddlantry3834";
-        public const string adminApiToken = "hedzm25chnxr8uusmqy1jg40o8976tdh";
+        public const string adminApiToken = "knet45g38uhjn";
         public const string authHeaderKey = "Rest-User-Token";
+
+        public const string ClientId = "TelligentAPI.{0}.ClientId";
+        public const string ClientSecret = "TelligentAPI.{0}.ClientSecret";
+        public const string CommunityBaseUrl = "TelligentAPI.{0}.CommunityBaseUrl";
+        public const string AdminAPIKey = "TelligentAPI.{0}.AdminAPIKey";
 
         //Coveo
         public const string basePushApi = "http://localhost:8080/rest/push/v1/documents";

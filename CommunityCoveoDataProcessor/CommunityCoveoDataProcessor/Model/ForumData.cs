@@ -18,6 +18,7 @@ namespace CommunityCoveoDataProcessor.Model
     {
         public string ContentId { get; set; }
         public string ContentTypeId { get; set; }
+        public string Id { get; set; }
         //public string IsFeatured { get; set; }
         //public string ForumId { get; set; }
         //public string GroupId { get; set; }

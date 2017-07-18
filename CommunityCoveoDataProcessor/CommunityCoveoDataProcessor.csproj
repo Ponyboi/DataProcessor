@@ -47,12 +47,23 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>07B23008AA7729F9DD36B29A7C051CBF429C5E08</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CommunityCoveoDataProcessor_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Threading.Tasks.Dataflow, Version=4.5.24.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Tpl.Dataflow.4.5.24\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
@@ -72,19 +83,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseApiClient.cs" />
-    <Compile Include="Constants\Configuration.cs" />
     <Compile Include="Constants\Constants.cs" />
     <Compile Include="Json\DictionaryAsArrayResolver.cs" />
     <Compile Include="Json\ForumsConverter.cs" />
     <Compile Include="Json\JsonCreationConverter.cs" />
     <Compile Include="Json\KeyValueResolver.cs" />
-    <Compile Include="Json\OrganizationConverter.cs" />
     <Compile Include="Json\OrgProfileConverter.cs" />
-    <Compile Include="Json\ResponseConverter.cs" />
     <Compile Include="Mediators\TelligentMediator.cs" />
     <Compile Include="Model\ForumData.cs" />
     <Compile Include="Model\OrganizationData.cs" />
-    <Compile Include="Model\ResponseData.cs" />
     <Compile Include="Model\TelligentData.cs" />
     <Compile Include="Model\TessUser.cs" />
     <Compile Include="Program.cs" />

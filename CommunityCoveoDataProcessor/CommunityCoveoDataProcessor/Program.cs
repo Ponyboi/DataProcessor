@@ -19,7 +19,9 @@ namespace CommunityCoveoDataProcessor
                                                                        Constants.Constants.basePushApiSecret,
                                                                        Constants.Constants.adminApiToken,
                                                                        Constants.Constants.adminName);
-            client.ProcessForumData();
+            //client.ProcessForumData();
+            client.ProcessOrganizations();
+
         }
     }
 }
