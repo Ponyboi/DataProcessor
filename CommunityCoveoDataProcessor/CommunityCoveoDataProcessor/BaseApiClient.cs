@@ -61,7 +61,7 @@ namespace CommunityCoveoDataProcessor
         protected Uri GetRestUri(string relativeUri, IDictionary<string, string> queryParameters)
         {
             var baseUri = ServerUri;
-            var builder = new UriBuilder(new Uri(baseUri, relativeUri));
+            var builder = new UriBuilder(new Uri(baseUri, String.Format("{0}{1}", "/api.ashx/v2/", relativeUri)));
             var qs = HttpUtility.ParseQueryString(builder.Query);
 
             foreach (var param in queryParameters)

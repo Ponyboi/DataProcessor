@@ -14,12 +14,13 @@ namespace CommunityCoveoDataProcessor
             //TelligentMediator mediator = new TelligentMediator();
             //mediator.ProcessForumData();
 
-            TelligentApiClient client = new TelligentApiClient(new Uri(Constants.Constants.baseApi),
+            TelligentApiClient client = new TelligentApiClient(new Uri(Constants.Configuration.TelligentAPI.CommunityBaseUrl),
                                                                new Uri(Constants.Constants.basePushApi),
                                                                        Constants.Constants.basePushApiSecret,
-                                                                       Constants.Constants.adminApiToken,
-                                                                       Constants.Constants.adminName);
+                                                                       Constants.Configuration.TelligentAPI.AdminAPIKey,
+                                                                       Constants.Configuration.TelligentAPI.AdminUsername);
             //client.ProcessForumData();
+            //client.ProcessUsers();
             client.ProcessOrganizations();
 
         }
